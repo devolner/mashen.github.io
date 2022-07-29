@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://https://devolner.github.io/</id>
+    <title>Gridea</title>
+    <updated>2022-07-27T07:46:23.881Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://https://devolner.github.io/"/>
+    <link rel="self" href="https://https://devolner.github.io/atom.xml"/>
+    <subtitle>温故而知新</subtitle>
+    <logo>https://https://devolner.github.io/images/avatar.png</logo>
+    <icon>https://https://devolner.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2022, Gridea</rights>
+    <entry>
+        <title type="html"><![CDATA[数学建模]]></title>
+        <id>https://https://devolner.github.io/post/shu-xue-jian-mo/</id>
+        <link href="https://https://devolner.github.io/post/shu-xue-jian-mo/">
+        </link>
+        <updated>2022-07-26T03:09:20.000Z</updated>
+        <content type="html"><![CDATA[<blockquote>
+<img src="C:\Users\小男孩\AppData\Roaming\Typora\typora-user-images\image-20220709104545451.png" alt="image-20220709104545451" style="zoom:200%;" />
+</blockquote>
+<p>层次分析法的一致性矩阵的确定</p>
+<p>算术平均数是按列归一化，权重值为行的平均数。</p>
+<figure data-type="image" tabindex="1"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220709104422254.png" alt="image-20220709104422254" loading="lazy"></figure>
+<p><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220709104705005.png" alt="image-20220709104705005" loading="lazy"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220709105240328.png" alt="image-20220709105240328" loading="lazy"></p>
+<p>lamentmax的计算</p>
+<figure data-type="image" tabindex="2"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220709110517809.png" alt="image-20220709110517809" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220709111115178.png" alt="image-20220709111115178" loading="lazy"></figure>
+<p>一致性检验的程序</p>
+<p><a href="https://blog.csdn.net/Caiqiudan/article/details/122294576">(29条消息) matlab一致性检验_mohana48833985的博客-CSDN博客_matlab一致性检验代码</a></p>
+<p>组合权重和组合一致性检验</p>
+<p>灰色系统模型</p>
+<p><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220711115400795.png" alt="image-20220711115400795" loading="lazy"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220711115543307.png" alt="image-20220711115543307" loading="lazy"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220711115704662.png" alt="image-20220711115704662" loading="lazy"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220711115859188.png" alt="image-20220711115859188" loading="lazy"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220712090247529.png" alt="image-20220712090247529" loading="lazy"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220712095241804.png" alt="image-20220712095241804" loading="lazy"></p>
+<h1 id="matlab数据拟合的代码以及r的确定">matlab数据拟合的代码以及R的确定</h1>
+<p>http://m.da-yu.cn/zatan/b160709拟合系数确定</p>
+<h2 id="一-想用matlab确定拟合函数的最佳次数">一、想用matlab确定拟合函数的最佳次数</h2>
+<p>确定参数的初始值是比较繁琐的工作，一般可以用随机函数rand（）来初定初始值，再根据plot（）的散点图的曲线趋势，再调整初始值，直到试验数据曲线与拟合函数曲线基本吻合，即r²</p>
+<p>≈1（相关系数），此时得到的系数为最佳值。（前提，拟合模型符合试验数据）</p>
+<h2 id="重点">重点</h2>
+<p>x = [1 2 3 4 5]<br>
+y = [5.39 7.11 8.55 10.49 12.55 ]</p>
+<p>[P,S] = polyfit(x, y, 1);</p>
+<p>yfit = P(1)*x + P(2);</p>
+<p>R2 = norm(yfit -mean(y))^2/norm(y - mean(y))^2;        %求R`2</p>
+<h2 id="r2计算">R`2计算</h2>
+<p><a href="https://blog.csdn.net/liangyihuai/article/details/88560859">(29条消息) 拟合系数 / 决定系数 / R方 / R^2的理解_ChainingBlocks的博客-CSDN博客_拟合系数</a></p>
+<p>先附上公式，来自wiki，然后给出个人理解：</p>
+<p>R=Cov(X, Y)/(sigma(X)*sigma(Y))-------------matlab计算公式</p>
+<p>上面公式中，红圈表示的是拟合系数计算公式，S S r e s SS_{res}SS<br>
+res</p>
+<p>表示真实值与预测值的差的平方之和，也就是预测值与真实值的误差。S S t o t SS_{tot}SS<br>
+tot</p>
+<p>表示平方差，我们都知道平方差表示数值的离散程度，越大表示越离散。那么使用S S r e s SS_{res}SS<br>
+res</p>
+<p>/S S t o t SS_{tot}SS<br>
+tot</p>
+<p>， 表示S S r e s SS_{res}SS<br>
+res</p>
+<p>排除离散的影响。</p>
+<p>我们想要的是一个能够衡量回归拟合好坏程度的度量，而拟合程度不应受到数值离散性的影响，所以，我们通过“相除”的方式来克服这个影响。</p>
+<p>结束！</p>
+<h2 id="httpsblogcsdnnetqq_43702629articledetails100674367数据拟合案例进行分析预测">https://blog.csdn.net/qq_43702629/article/details/100674367数据拟合案例，进行分析预测，</h2>
+<p>plofit(x,y,n),其中x,y是拟合数据，n为拟合多项式的阶数。</p>
+<p>x=0:pi/20:2/pi;</p>
+<blockquote>
+<blockquote>
+<p>y=sin(x);<br>
+p=polyfit(x,y,5)<br>
+警告: 多项式不是唯一的；阶数 &gt;= 数据点的数目。<br>
+In polyfit (line 74)</p>
+</blockquote>
+</blockquote>
+<p>p =</p>
+<pre><code>     0    0.0128   -0.1736    0.0016    0.9999    0.0000
+</code></pre>
+<blockquote>
+<blockquote>
+<p>x1=0:pi/30:2<em>pi;<br>
+y1=sin(x1);<br>
+y2=polyval(p,x1);<br>
+plot(x1,y1,'-b',x1,y2,'</em> r')</p>
+</blockquote>
+</blockquote>
+<h2 id="数学规划">数学规划</h2>
+<figure data-type="image" tabindex="4"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220713083847909.png" alt="image-20220713083847909" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[数学建模]]></title>
+        <id>https://https://devolner.github.io/post/sxjm/</id>
+        <link href="https://https://devolner.github.io/post/sxjm/">
+        </link>
+        <updated>2022-07-26T03:09:20.000Z</updated>
+        <summary type="html"><![CDATA[<blockquote></blockquote>
+]]></summary>
+        <content type="html"><![CDATA[<blockquote></blockquote>
+<!-- more -->
+<img src="C:\Users\小男孩\AppData\Roaming\Typora\typora-user-images\image-20220709104545451.png" alt="image-20220709104545451" style="zoom:200%;" />
+<p>层次分析法的一致性矩阵的确定</p>
+<p>算术平均数是按列归一化，权重值为行的平均数。</p>
+<figure data-type="image" tabindex="1"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220709104422254.png" alt="image-20220709104422254" loading="lazy"></figure>
+<p><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220709104705005.png" alt="image-20220709104705005" loading="lazy"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220709105240328.png" alt="image-20220709105240328" loading="lazy"></p>
+<p>lamentmax的计算</p>
+<figure data-type="image" tabindex="2"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220709110517809.png" alt="image-20220709110517809" loading="lazy"></figure>
+<figure data-type="image" tabindex="3"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220709111115178.png" alt="image-20220709111115178" loading="lazy"></figure>
+<p>一致性检验的程序</p>
+<p><a href="https://blog.csdn.net/Caiqiudan/article/details/122294576">(29条消息) matlab一致性检验_mohana48833985的博客-CSDN博客_matlab一致性检验代码</a></p>
+<p>组合权重和组合一致性检验</p>
+<p>灰色系统模型</p>
+<p><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220711115400795.png" alt="image-20220711115400795" loading="lazy"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220711115543307.png" alt="image-20220711115543307" loading="lazy"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220711115704662.png" alt="image-20220711115704662" loading="lazy"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220711115859188.png" alt="image-20220711115859188" loading="lazy"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220712090247529.png" alt="image-20220712090247529" loading="lazy"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220712095241804.png" alt="image-20220712095241804" loading="lazy"></p>
+<h1 id="matlab数据拟合的代码以及r的确定">matlab数据拟合的代码以及R的确定</h1>
+<p>http://m.da-yu.cn/zatan/b160709拟合系数确定</p>
+<h2 id="一-想用matlab确定拟合函数的最佳次数">一、想用matlab确定拟合函数的最佳次数</h2>
+<p>确定参数的初始值是比较繁琐的工作，一般可以用随机函数rand（）来初定初始值，再根据plot（）的散点图的曲线趋势，再调整初始值，直到试验数据曲线与拟合函数曲线基本吻合，即r²</p>
+<p>≈1（相关系数），此时得到的系数为最佳值。（前提，拟合模型符合试验数据）</p>
+<h2 id="重点">重点</h2>
+<p>x = [1 2 3 4 5]<br>
+y = [5.39 7.11 8.55 10.49 12.55 ]</p>
+<p>[P,S] = polyfit(x, y, 1);</p>
+<p>yfit = P(1)*x + P(2);</p>
+<p>R2 = norm(yfit -mean(y))^2/norm(y - mean(y))^2;        %求R`2</p>
+<h2 id="r2计算">R`2计算</h2>
+<p><a href="https://blog.csdn.net/liangyihuai/article/details/88560859">(29条消息) 拟合系数 / 决定系数 / R方 / R^2的理解_ChainingBlocks的博客-CSDN博客_拟合系数</a></p>
+<p>先附上公式，来自wiki，然后给出个人理解：</p>
+<p>R=Cov(X, Y)/(sigma(X)*sigma(Y))-------------matlab计算公式</p>
+<p>上面公式中，红圈表示的是拟合系数计算公式，S S r e s SS_{res}SS<br>
+res</p>
+<p>表示真实值与预测值的差的平方之和，也就是预测值与真实值的误差。S S t o t SS_{tot}SS<br>
+tot</p>
+<p>表示平方差，我们都知道平方差表示数值的离散程度，越大表示越离散。那么使用S S r e s SS_{res}SS<br>
+res</p>
+<p>/S S t o t SS_{tot}SS<br>
+tot</p>
+<p>， 表示S S r e s SS_{res}SS<br>
+res</p>
+<p>排除离散的影响。</p>
+<p>我们想要的是一个能够衡量回归拟合好坏程度的度量，而拟合程度不应受到数值离散性的影响，所以，我们通过“相除”的方式来克服这个影响。</p>
+<p>结束！</p>
+<h2 id="httpsblogcsdnnetqq_43702629articledetails100674367数据拟合案例进行分析预测">https://blog.csdn.net/qq_43702629/article/details/100674367数据拟合案例，进行分析预测，</h2>
+<p>plofit(x,y,n),其中x,y是拟合数据，n为拟合多项式的阶数。</p>
+<p>x=0:pi/20:2/pi;</p>
+<blockquote>
+<blockquote>
+<p>y=sin(x);<br>
+p=polyfit(x,y,5)<br>
+警告: 多项式不是唯一的；阶数 &gt;= 数据点的数目。<br>
+In polyfit (line 74)</p>
+</blockquote>
+</blockquote>
+<p>p =</p>
+<pre><code>     0    0.0128   -0.1736    0.0016    0.9999    0.0000
+</code></pre>
+<blockquote>
+<blockquote>
+<p>x1=0:pi/30:2<em>pi;<br>
+y1=sin(x1);<br>
+y2=polyval(p,x1);<br>
+plot(x1,y1,'-b',x1,y2,'</em> r')</p>
+</blockquote>
+</blockquote>
+<h2 id="数学规划">数学规划</h2>
+<figure data-type="image" tabindex="4"><img src="C:%5CUsers%5C%E5%B0%8F%E7%94%B7%E5%AD%A9%5CAppData%5CRoaming%5CTypora%5Ctypora-user-images%5Cimage-20220713083847909.png" alt="image-20220713083847909" loading="lazy"></figure>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[Hello Gridea]]></title>
+        <id>https://https://devolner.github.io/post/hello-gridea/</id>
+        <link href="https://https://devolner.github.io/post/hello-gridea/">
+        </link>
+        <updated>2018-12-11T16:00:00.000Z</updated>
+        <summary type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+]]></summary>
+        <content type="html"><![CDATA[<p>👏  欢迎使用 <strong>Gridea</strong> ！<br>
+✍️  <strong>Gridea</strong> 一个静态博客写作客户端。你可以用它来记录你的生活、心情、知识、笔记、创意... ...</p>
+<!-- more -->
+<p><a href="https://github.com/getgridea/gridea">Github</a><br>
+<a href="https://gridea.dev/">Gridea 主页</a><br>
+<a href="https://fehey.com/">示例网站</a></p>
+<h2 id="特性">特性👇</h2>
+<p>📝  你可以使用最酷的 <strong>Markdown</strong> 语法，进行快速创作</p>
+<p>🌉  你可以给文章配上精美的封面图和在文章任意位置插入图片</p>
+<p>🏷️  你可以对文章进行标签分组</p>
+<p>📋  你可以自定义菜单，甚至可以创建外部链接菜单</p>
+<p>💻  你可以在 <strong>Windows</strong>，<strong>MacOS</strong> 或 <strong>Linux</strong> 设备上使用此客户端</p>
+<p>🌎  你可以使用 <strong>𝖦𝗂𝗍𝗁𝗎𝖻 𝖯𝖺𝗀𝖾𝗌</strong> 或 <strong>Coding Pages</strong> 向世界展示，未来将支持更多平台</p>
+<p>💬  你可以进行简单的配置，接入 <a href="https://github.com/gitalk/gitalk">Gitalk</a> 或 <a href="https://github.com/SukkaW/DisqusJS">DisqusJS</a> 评论系统</p>
+<p>🇬🇧  你可以使用<strong>中文简体</strong>或<strong>英语</strong></p>
+<p>🌁  你可以任意使用应用内默认主题或任意第三方主题，强大的主题自定义能力</p>
+<p>🖥  你可以自定义源文件夹，利用 OneDrive、百度网盘、iCloud、Dropbox 等进行多设备同步</p>
+<p>🌱 当然 <strong>Gridea</strong> 还很年轻，有很多不足，但请相信，它会不停向前 🏃</p>
+<p>未来，它一定会成为你离不开的伙伴</p>
+<p>尽情发挥你的才华吧！</p>
+<p>😘 Enjoy~</p>
+]]></content>
+    </entry>
+</feed>
